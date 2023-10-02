@@ -1,19 +1,20 @@
-$(document).ready(() => {
+$(document).ready( function() {
 
-    let currentColor = 'white';
+    // Do something when DOM is ready
 
-    $("#btnDemo").click(() => {
+    let currentColor = 'white'; // have to define as a semi-global var
+    $('#btnDemo').click( () => {
         if (currentColor === 'white') {
-            currentColor = 'blue'
+            currentColor = 'blue';
         } else {
-            currentColor = 'white'
+            currentColor = 'white';
         }
-    })
 
-    $("#header").css('background-color', currentColor);
-    // $('#header').text('Class Demo - ' + currentColor);
-})
+        $('#header').css('background-color', currentColor);
+        $('#header').text('Class Demo - ' + currentColor);
+    })
+});
 
 function test() {
-    console.log("button works!")
+    console.log("button works!");
 }
