@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>In-class Demo of javascript</title>
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="demo.js"></script>
+    <script type="text/javascript" src="demo.js">
+        $(document).ready(function() {
+            $("div").css("border", ("3px solid red"));
+        });
+    </script>
 </head>
 <body>
-    <h1 id='header'>Class Demo for jQuery on save</h1>
-    <button id='#btnDemo' onClick="test()" type="button">Change header color</button>
+    <div>
+        <h1 id='header'>Class Demo for jQuery on save</h1>
+        <button id='#btnDemo' onClick="test()" type="button">Change header color</button>
+    </div>
 </body>
 </html>
