@@ -12,5 +12,5 @@ $(document).ready( () => {
 
         $('#header').css('background-color', currentColor);
         $('#header').text('Class Demo - ' + currentColor);
-    })
+    });
 });
